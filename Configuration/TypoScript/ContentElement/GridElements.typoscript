@@ -1,0 +1,35 @@
+#############################
+#### CTYPE: GRIDELEMENTS ####
+#############################
+
+tt_content.gridelements_pi1 >
+tt_content.gridelements_pi1 =< lib.contentElement
+tt_content.gridelements_pi1 {
+
+    ################
+    ### TEMPLATE ###
+    ################
+    templateName = GridElements
+    templateRootPaths {
+        1 = EXT:autogrids/Resources/Private/Templates/ContentElements/
+    }
+    partialRootPaths {
+        1 = EXT:autogrids/Resources/Private/Partials/ContentElements/
+    }
+    layoutRootPaths {
+        1 = EXT:autogrids/Resources/Private/Layouts/ContentElements/
+    }
+
+    ##########################
+    ### DATA PREPROCESSING ###
+    ##########################
+    dataProcessing {
+        10 = GridElementsTeam\Gridelements\DataProcessing\GridChildrenProcessor
+        10 {
+            default {
+                as = children
+            }
+        }
+    }
+
+}

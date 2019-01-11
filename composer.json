@@ -1,0 +1,65 @@
+{
+    "name": "bk2k/autogrids",
+    "type": "typo3-cms-extension",
+    "description": "",
+    "keywords": [
+        "TYPO3 CMS",
+        "Extension"
+    ],
+    "homepage": "https://github.com/benjaminkott/autogrids",
+    "authors": [
+        {
+            "name": "Benjamin Kott",
+            "email": "info@bk2k.info",
+            "role": "Developer",
+            "homepage": "http://www.bk2k.info/"
+        }
+    ],
+    "license": [
+        "GPL-2.0-or-later"
+    ],
+    "support": {
+        "issues": "https://github.com/benjaminkott/autogrids/issues"
+    },
+    "require": {
+        "php": ">=7.0.0",
+        "typo3/cms-backend": "^9.5",
+        "typo3/cms-core": "^9.5",
+        "typo3/cms-frontend": "^9.5",
+        "gridelementsteam/gridelements": "^9.0"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^2.3.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "BK2K\\AutoGrids\\": "Classes"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "BK2K\\AutoGrids\\Tests\\": "Tests"
+        }
+    },
+    "replace": {
+        "autogrids": "self.version",
+        "typo3-ter/autogrids": "self.version"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "vendor-dir": ".build/vendor",
+        "bin-dir": ".build/bin"
+    },
+    "scripts": {
+        "post-autoload-dump": [
+            "mkdir -p .build/web/typo3conf/ext/",
+            "[ -L .build/web/typo3conf/ext/autogrids ] || ln -snvf ../../../../. .build/web/typo3conf/ext/autogrids"
+        ]
+    },
+    "extra": {
+        "typo3/cms": {
+            "cms-package-dir": "{$vendor-dir}/typo3/cms",
+            "web-dir": ".build/web"
+        }
+    }
+}

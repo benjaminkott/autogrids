@@ -1,0 +1,7 @@
+.grid-row {
+    display: flex;
+}
+.grid-column {
+    flex-grow: 1;
+    flex-basis: 0;
+}

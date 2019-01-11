@@ -1,0 +1,5 @@
+.build
+.vscode
+Build/node_modules/*
+composer.lock
+.php_cs.cache
