@@ -1,0 +1,35 @@
+tx_gridelements {
+    setup {
+        fourcolumns {
+            title = LLL:EXT:autogrids/Resources/Private/Language/locallang_be.xlf:layout.fourcolumns.title
+            description = LLL:EXT:autogrids/Resources/Private/Language/locallang_be.xlf:layout.fourcolumns.description
+            topLevelLayout = 0
+            config {
+                colCount = 4
+                rowCount = 1
+                rows {
+                    1 {
+                        columns {
+                            1 {
+                                name = LLL:EXT:autogrids/Resources/Private/Language/locallang_be.xlf:column.1
+                                colPos = 101
+                            }
+                            2 {
+                                name = LLL:EXT:autogrids/Resources/Private/Language/locallang_be.xlf:column.2
+                                colPos = 102
+                            }
+                            3 {
+                                name = LLL:EXT:autogrids/Resources/Private/Language/locallang_be.xlf:column.3
+                                colPos = 103
+                            }
+                            4 {
+                                name = LLL:EXT:autogrids/Resources/Private/Language/locallang_be.xlf:column.4
+                                colPos = 104
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

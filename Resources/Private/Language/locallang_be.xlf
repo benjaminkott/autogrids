@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages">
+        <body>
+
+            <trans-unit id="layout.fourcolumns.title">
+                <source>Four Columns</source>
+            </trans-unit>
+            <trans-unit id="layout.fourcolumns.description">
+                <source></source>
+            </trans-unit>
+
+            <trans-unit id="layout.threecolumns.title">
+                <source>Three Columns</source>
+            </trans-unit>
+            <trans-unit id="layout.threecolumns.description">
+                <source></source>
+            </trans-unit>
+
+            <trans-unit id="layout.twocolumns.title">
+                <source>Two Columns</source>
+            </trans-unit>
+            <trans-unit id="layout.twocolumns.description">
+                <source></source>
+            </trans-unit>
+
+            <trans-unit id="column.1">
+                <source>1</source>
+            </trans-unit>
+            <trans-unit id="column.2">
+                <source>2</source>
+            </trans-unit>
+            <trans-unit id="column.3">
+                <source>3</source>
+            </trans-unit>
+            <trans-unit id="column.4">
+                <source>4</source>
+            </trans-unit>
+
+        </body>
+    </file>
+</xliff>

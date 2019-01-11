@@ -1,0 +1,14 @@
+###################################
+#### CONTENT ELEMENT RENDERING ####
+###################################
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:autogrids/Configuration/TypoScript/ContentElement/GridElements.typoscript">
+
+
+##############
+#### PAGE ####
+##############
+page {
+    includeCSSLibs {
+        autogrids = EXT:autogrids/Resources/Public/Css/theme.css
+    }
+}

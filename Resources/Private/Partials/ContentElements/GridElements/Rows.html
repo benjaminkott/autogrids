@@ -1,0 +1,19 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+    <f:if condition="{children}">
+        <f:for each="{children}" as="item" key="key">
+            <div class="grid-row grid-row-{key}">
+
+                <f:variable name="arguments" value="{
+                    data: data,
+                    children: item,
+                    options: options,
+                    settings: settings
+                    }" />
+                <f:render partial="GridElements/Columns" arguments="{arguments}" />
+
+            </div>
+        </f:for>
+    </f:if>
+
+</html>
