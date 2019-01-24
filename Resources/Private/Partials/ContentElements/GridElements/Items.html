@@ -4,7 +4,7 @@
         <f:for each="{children}" as="item">
 
             <f:if condition="{item.data.CType}">
-                <f:cObject typoscriptObjectPath="tt_content.{item.data.CType}" data="{item.data}"/>
+                <f:cObject typoscriptObjectPath="tt_content.{item.data.CType}" data="{item.data}" table="tt_content"/>
             </f:if>
 
         </f:for>
