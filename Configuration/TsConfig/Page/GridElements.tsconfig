@@ -1,4 +1,4 @@
 ######################
 #### GRIDELEMENTS ####
 ######################
-<INCLUDE_TYPOSCRIPT: source="DIR:EXT:autogrids/Configuration/TsConfig/Page/Gridelements" extensions="tsconfig">
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:autogrids/Configuration/TsConfig/Page/GridElements" extensions="tsconfig">
